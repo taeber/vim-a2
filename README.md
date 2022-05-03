@@ -35,7 +35,7 @@ git clone https://github.com/taeber/vim-go ~/.vim/bundles/vim-go
 See Also
 --------
 
-* _[A2 Programming Language][]_
+* [A2 Programming Language][]
 * _[Writing Vim Syntax Plugins](https://thoughtbot.com/blog/writing-vim-syntax-plugins)_
 * _[Create your own syntax files](https://vim.fandom.com/wiki/Creating_your_own_syntax_files)_
 

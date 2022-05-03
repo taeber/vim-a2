@@ -53,7 +53,7 @@ function! GoIndent(lnum) abort
     endif
   endfor
 
-  if prevl =~ '[({]\s*$'
+  if prevl =~ '[({\[]\s*$'
     " previous line opened a block
     let ind += shiftwidth()
   endif
@@ -63,7 +63,7 @@ function! GoIndent(lnum) abort
   endif
   " TODO: handle if the previous line is a label.
 
-  if thisl =~ '^\s*[)}]'
+  if thisl =~ '^\s*[)}\]]'
     " this line closed a block
     let ind -= shiftwidth()
   endif

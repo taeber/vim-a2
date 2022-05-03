@@ -8,13 +8,7 @@ Copyright © 2022 Taeber Rapczak \<taeber@rapczak.com>
 
 License: [MIT](LICENSE)
 
-
-Usage
------
-
-```
-vim -c 'syntax on' -c 'setfiletype a2' program.a2
-```
+![Screenshot of plugin in use](screenshot.png)
 
 
 Installation
@@ -31,6 +25,18 @@ Using [pathogen](https://github.com/tpope/vim-pathogen):
 ```
 git clone https://github.com/taeber/vim-go ~/.vim/bundles/vim-go
 ```
+
+
+Configuration
+-------------
+
+Too much color? To disable highlighting identifiers:
+
+```
+:let g:a2_highlight_idents=0
+:e
+```
+
 
 See Also
 --------

@@ -52,12 +52,15 @@ syn match       a2Pointer       "\v\^"
 syn match       a2Accessor      "\v\."
 syn match       a2Location      "\v\@"
 syn match       a2Separator     "\v,"
+syn match       a2Comparison    "<>"
+syn match       a2Comparison    "\v[<>]\=?([^<>=])@="
 
 hi def link     a2Assignment    Operator
 hi def link     a2Index         Operator
 hi def link     a2Pointer       Operator
 hi def link     a2Accessor      Operator
 hi def link     a2Location      Operator
+hi def link     a2Comparison    Operator
 
 syn match       a2Register      /\v(\@\s*)@<=((A[XY]?)|(X[AY]?)|(Y[AX]?))(\W|\_s)@=/
 hi def link     a2Register      Special

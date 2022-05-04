@@ -7,16 +7,11 @@ syn keyword     a2Keywords      use var let sub
 syn keyword     a2Conditional   if
 syn keyword     a2Loop          while
 syn keyword     a2Statement     stop repeat
-syn match       a2Outputs       "->"
-syn match       a2Inputs        "<-"
 
 hi def link     a2Keywords      Keyword
 hi def link     a2Conditional   Conditional
 hi def link     a2Loop          Repeat
 hi def link     a2Statement     Statement
-hi def link     a2Outputs       Operator
-hi def link     a2Inputs        Operator
-
 
 if get(g:, 'a2_highlight_idents', 1)
   syn match     a2Identifier    "\v[a-zA-Z][a-zA-Z0-9]*"
@@ -61,6 +56,13 @@ hi def link     a2Pointer       Operator
 hi def link     a2Accessor      Operator
 hi def link     a2Location      Operator
 hi def link     a2Comparison    Operator
+
+
+syn match       a2Outputs       "->"
+syn match       a2Inputs        "\v(sub\s*)@<=\<-"
+hi def link     a2Outputs       Operator
+hi def link     a2Inputs        Operator
+
 
 syn match       a2Register      /\v(\@\s*)@<=((A[XY]?)|(X[AY]?)|(Y[AX]?))(\W|\_s)@=/
 hi def link     a2Register      Special

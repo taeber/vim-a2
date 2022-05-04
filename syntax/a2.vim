@@ -24,8 +24,7 @@ if get(g:, 'a2_highlight_idents', 1)
 endif
 
 
-syn match       a2Types         /:\_s\+\zs[a-zA-Z][a-zA-Z0-9]*/
-"/\(\:\s*\)\@<=[a-zA-Z][a-zA-Z0-9]*/
+syn match       a2Types         /\v(\:\s*)@<=([a-zA-Z][a-zA-Z0-9]*)/
 hi def link     a2Types         Type
 
 

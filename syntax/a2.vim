@@ -41,7 +41,7 @@ syn match       a2Comment       "\v;.*$"
 hi def link     a2Comment       Comment
 
 
-syn match       a2Assignment    "\v[:+\-~]?\="
+syn match       a2Assignment    "\v[:+\-&|^!]?\="
 syn match       a2Index         "\v_"
 syn match       a2Pointer       "\v\^"
 syn match       a2Accessor      "\v\."

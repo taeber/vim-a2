@@ -23,7 +23,8 @@ syn match       a2Types         /\v(\:\s*)@<=([a-zA-Z][a-zA-Z0-9]*)/
 hi def link     a2Types         Type
 
 
-syn match       a2Decimal       "\v-?\d+"
+syn match       a2Decimal       "\v-\d+"
+syn match       a2Decimal       "\v[a-zA-Z]@<!\d+"
 syn match       a2Binary        "\v\%[01]+"
 syn match       a2Hexadecimal   "\v\$\x+"
 

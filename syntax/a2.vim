@@ -34,7 +34,7 @@ hi def link     a2Hexadecimal   Number
 
 
 syn region      a2TextLiteral   start=/"/ skip=/\\"/ end=/"/ oneline
-syn match       a2CharLiteral   /`[!-~]/
+syn match       a2CharLiteral   /`[ -~]/
 hi def link     a2TextLiteral   String
 hi def link     a2CharLiteral   Character
 

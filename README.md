@@ -17,13 +17,13 @@ Installation
 Using [Vim 8 packages](http://vimhelp.appspot.com/repeat.txt.html#packages):
 
 ```
-git clone https://github.com/taeber/vim-go ~/.vim/pack/plugins/start/vim-go
+git clone https://github.com/taeber/vim-a2 ~/.vim/pack/plugins/start/vim-a2
 ```
 
 Using [pathogen](https://github.com/tpope/vim-pathogen):
 
 ```
-git clone https://github.com/taeber/vim-go ~/.vim/bundles/vim-go
+git clone https://github.com/taeber/vim-a2 ~/.vim/bundles/vim-a2
 ```
 
 
